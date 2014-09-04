@@ -170,7 +170,7 @@ nav[role="off-canvas"] ul > li:nth-child(5) {
 
   label:after {
     position: absolute;
-    right: .25em;
+    left: .25em;
     top: 0;
     content: "\2261";
     font-size: 1.8em;
