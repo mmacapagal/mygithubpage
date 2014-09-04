@@ -111,7 +111,7 @@ nav[role="off-canvas"] ul > li {
   text-align: center;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
-  transition-property: box-shadow, color, opacity, padding-left;
+  transition-property: box-shadow, color, opacity, padding-right;
   cursor: pointer;
 }
 nav[role="off-canvas"] ul > li:hover {
