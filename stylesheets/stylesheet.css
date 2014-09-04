@@ -79,8 +79,9 @@ nav[role="off-canvas"] {
     transition-duration: .3s, .5s;
     transition-timing-function: ease-in-out;
     transition-property: left, opacity, box-shadow;
-    
-    a {
+    }
+	
+nav a {
       color:#fff;
       text-decoration:none;
       font: 1.4em 'Open Sans', sans-serif;
