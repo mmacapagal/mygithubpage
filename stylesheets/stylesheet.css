@@ -98,7 +98,7 @@ nav[role="off-canvas"] ul {
   width: 100%;
 }
 nav[role="off-canvas"] ul > li {
-  float: left;
+  float: right;
   padding: .55em .55em;
   width: 8em;
   height: 8em;
