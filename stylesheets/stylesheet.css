@@ -150,14 +150,14 @@ nav[role="off-canvas"] ul > li:nth-child(5) {
   nav[role="off-canvas"] {
     position: absolute;
     top: 3em;
-    left: -20em;
+    right: -20em;
     width: 20em;
     opacity: 0;
   }
   nav[role="off-canvas"] ul > li {
     height: 100%;
     width: 100%;
-    text-align: left;
+    text-align: right;
     margin: 0;
   }
   nav[role="off-canvas"] ul > li:hover {
