@@ -1,423 +1,219 @@
-/*******************************************************************************
-Slate Theme for GitHub Pages
-by Jason Costello, @jsncostello
-*******************************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
-@import url(pygment_trac.css);
-
-/*******************************************************************************
-MeyerWeb Reset
-*******************************************************************************/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+* {
+   box-sizing:border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+html,
+body {
+    width:100%;
+    height:100%;
 }
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*******************************************************************************
-Theme Styles
-*******************************************************************************/
 
 body {
-  box-sizing: border-box;
-  color:#373737;
-  background: #212121;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    margin:.55em;
+    color: rgb(0, 0, 0);
+    background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
-  font-weight: 700;
-  color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: .95em;
+}
+ 
+::-webkit-scrollbar-track {
+  background-color: rgba(217, 217, 217, .5);
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 700;
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 184, 184, .5);
+  box-shadow:
+    inset .05em .05em 0 rgba(0, 0, 0, .1),
+    inset 0 -.05em 0 rgba(0, 0, 0, .07)
+  ;
 }
 
-h2 {
-  padding-bottom: 10px;
-  font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
+/* dummy content */
+.content {
+  float:left;
+  font: 1em 'Open Sans', sans-serif;
+  margin:.75em 0 0 0;
+  transition: margin .3s ease-in-out;
+    
+  > p {
+    margin:.25em 0 .75em 0;      
+  }
 }
 
-h3 {
-  font-size: 24px;
-}
+/* Advanced Checkbox Hack */
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
 
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
-}
-
-p {
-  margin: 10px 0 15px 0;
-}
-
-footer p {
-  color: #f2f2f2;
-}
-
-a {
-  text-decoration: none;
-  color: #007edf;
-  text-shadow: none;
-
-  transition: color 0.5s ease;
-  transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
-  -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
-  -ms-transition: text-shadow 0.5s ease;
-}
-
-a:hover, a:focus {text-decoration: underline;}
-
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
-}
-
-img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
-
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
-}
-
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none;
-}
-
-pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
-
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
-
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
-
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow: auto;
-}
-
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-pre code {
-  display: block;
-  box-shadow: none;
-}
-
-blockquote {
-  color: #666;
-  margin-bottom: 20px;
-  padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
-}
-
-
-ul, ol, dl {
-  margin-bottom: 15px
-}
-
-ul {
-  list-style: inside;
-  padding-left: 20px;
-}
-
-ol {
-  list-style: decimal inside;
-  padding-left: 20px;
-}
-
-dl dt {
-  font-weight: bold;
-}
-
-dl dd {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-dl p {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-hr {
-  height: 1px;
-  margin-bottom: 5px;
-  border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
-}
-
-table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
- }
-
-th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  background: #373737;
-  color: #fff;
- }
-
-td {
-  padding: 10px;
-  border: 1px solid #373737;
- }
-
-form {
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-/*******************************************************************************
-Full-Width Styles
-*******************************************************************************/
-
-.outer {
-  width: 100%;
-}
-
-.inner {
-  position: relative;
-  max-width: 640px;
-  padding: 20px 10px;
-  margin: 0 auto;
-}
-
-#forkme_banner {
-  display: block;
+input[type=checkbox] {
   position: absolute;
-  top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  top: -9999px;
+  left: -9999px;
 }
 
-#header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
-}
-
-#header_wrap .inner {
-  padding: 50px 10px 30px 10px;
-}
-
-#project_title {
-  margin: 0;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
-
-#downloads {
+label {
   position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
+  left:0;
+  display:none;
+  width:2em;
+  height:2.25em;
+  padding:.35em;
+  font-size:1.1em;
+  color:#fff;
+  transition:color .3s ease-in-out;
+  cursor: pointer;
+  user-select:none;
+  margin:0;
+  background:rgba(0, 0, 0, .4); 
 }
 
-.zip_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
+/* big screens */
+nav[role="off-canvas"] {
+    position:relative;
+    width: 50em;
+    margin: 0 auto;
+    transition-duration: .3s, .5s;
+    transition-timing-function: ease-in-out;
+    transition-property: left, opacity, box-shadow;
+    
+    a {
+      color:#fff;
+      text-decoration:none;
+      font: 1.4em 'Open Sans', sans-serif;
+      transition:color .3s ease-in-out;
+      display:table-cell;
+      vertical-align: middle;
+    }
+    
+    ul {
+      padding: 0;  
+      margin: 0 auto;  
+      width:100%;
+    
+      > li {
+        float:left;
+        padding:.55em .55em;
+        width:8em;
+        height:8em;
+        margin:.5em;
+        opacity:.8;
+    
+        text-transform:uppercase;
+        display: table;
+        background:hsla(11, 94%, 50%, .65);
+        cursor: pointer;
+    
+        text-align:center;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: box-shadow, color, opacity, padding-left;
+        cursor: pointer;
+    
+        &:hover {
+            color:#fff;
+            opacity:1;
+            box-shadow:0 0 0 .5em rgba(255, 255, 255, .95);
+    
+          > a {
+             color:#fff;
+          }
+        }
+
+        &:nth-child(2) {
+          background:hsla(44, 94%, 50%, .65);
+        }
+        &:nth-child(3) {
+          background:hsla(114, 94%, 50%, .65);  
+        }
+        &:nth-child(4) {
+          background:hsla(184, 94%, 50%, .65);  
+        }
+        &:nth-child(5) {
+          background:hsla(224, 94%, 50%, .65);  
+        }
+      }
+    }
 }
 
-.tar_download_link {
-  display: block;
-  float: right;
-  width: 90px;
-  height:70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
-}
-
-.zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
-}
-
-.tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
-}
-
-#main_content_wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-}
-
-#main_content {
-  padding-top: 40px;
-}
-
-#footer_wrap {
-  background: #212121;
-}
-
-
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
+/* small screens */
+@media screen and (max-width: 44em) {
+  $menu_width: 20em;
+  $content_offset : .5em;
+    
+  html,
   body {
-    font-size:14px;
+    margin:0;
+    overflow-x:hidden;
   }
 
-  #downloads {
-    display: none;
+  .content {
+    margin:2.5em .5em 0 .5em;
+  }
+    
+  nav[role="off-canvas"] {
+    position:absolute;
+    top:3em;
+    left:-$menu_width;
+    width: $menu_width;
+    opacity:0;
+    
+    ul > li {
+      height:100%;
+      width:100%;
+      text-align:left;
+      margin:0;
+    
+      &:hover {
+        box-shadow:inset 0 0 0 .15em rgba(255, 255, 255, .45);
+      }
+    }
   }
 
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
+  label {
+    display:block;
   }
 
-  #project_title {
-  font-size: 32px;
+  label:after {
+    position: absolute;
+    right: .25em;  
+    top: 0;
+    content:"\2261";
+    font-size:1.8em;
   }
 
-  h1 {
-    font-size: 28px;
+  label:hover,
+  input:checked ~ label {
+    color:#000;
   }
 
-  h2 {
-    font-size: 24px;
+  input:checked ~ nav[role="off-canvas"] {
+    opacity:1;
+    left:0;
+    box-shadow:-30em 0 0 30em rgba(0, 0, 0, .3);
+    
+    ul > li {
+      padding: .55em .55em .55em 1.5em;
+       
+      &:hover {
+        padding-left:3.5em;
+      }
+        
+      &:after {
+        position:absolute;
+        right:.25em;
+        content:"\203A";
+        font: bold 1.4em sans-serif;
+        color:inherit;
+      }
+    }
   }
 
-  h3 {
-    font-size: 21px;
+  input:checked ~ .content {
+    margin-left: $menu_width + $content_offset;
+    margin-right:-($menu_width + $content_offset);
   }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
 }
