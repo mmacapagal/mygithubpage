@@ -82,7 +82,7 @@ nav[role="off-canvas"] {
   margin: 0 auto;
   transition-duration: .3s, .5s;
   transition-timing-function: ease-in-out;
-  transition-property: left, opacity, box-shadow;
+  transition-property: right, opacity, box-shadow;
 }
 nav[role="off-canvas"] a {
   color: #fff;
@@ -98,7 +98,7 @@ nav[role="off-canvas"] ul {
   width: 100%;
 }
 nav[role="off-canvas"] ul > li {
-  float: right;
+  float: left;
   padding: .55em .55em;
   width: 8em;
   height: 8em;
