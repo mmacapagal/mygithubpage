@@ -1,0 +1,29 @@
+/*CSS Document*/
+
+/*Custom Styling to Navbar
+---------------------------------- */
+.navbar-wrapper {
+	position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+	z-index: 20;
+}
+
+.right-inner-addon {
+	position: relative;
+		top: 8px;
+		right: 1px;
+	height: 3px;
+}
+
+.right-inner-addon input {
+	padding-right: 30px;
+}
+
+.right-inner-addon i {
+	position: absolute;
+		right: 0px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
