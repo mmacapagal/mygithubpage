@@ -53,6 +53,7 @@ body {
 }
 
 #nav-container {
+  font-size:0;
   overflow:none;
   white-space:nowrap;
   background: #2d2d7c url('../assets/img/background.png') repeat fixed; 
@@ -60,12 +61,13 @@ body {
 
 #nav {
   z-index: 300;
-  font: 500 10px 'Raleway', helvetica, arial, sans-serif;
+  font-size: 0;
   text-align: center;
   margin: 0;
 }
 
 #nav > li {
+  font: 500 10px 'Raleway', helvetica, arial, sans-serif;
   position: relative;
   display: inline-block;
   background-color:rgba(0,0,0,0.75);
