@@ -80,11 +80,11 @@ body {
 }
 
 #nav > li:first-child {
-  padding-left: 2px;
+  padding-left: 10px;
 }
 
 #nav > li:last-child {
-  padding-right: 2px;
+  padding-right: 10px;
 }
 
 #nav a {
