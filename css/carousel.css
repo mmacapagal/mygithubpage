@@ -53,9 +53,6 @@ body {
 }
 
 #nav-container {
-  font-size:0;
-  overflow:none;
-  white-space:nowrap;
   background: #2d2d7c url('../assets/img/background.png') repeat fixed; 
 }
 
