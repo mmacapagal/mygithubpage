@@ -2,6 +2,16 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
 body {
   padding-bottom: 40px;
   color: #000;
@@ -74,7 +84,7 @@ body {
 }
 
 #nav a:visited {
-  color: #6969a8;
+  color: #bcbcbc;
 }
 
 #nav a:hover {
@@ -84,6 +94,10 @@ body {
 
 #nav a:active {
   color: #757575;
+}
+
+#experience{
+	display: none;
 }
 
 #popover {
@@ -159,7 +173,7 @@ left: 13px;
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 399px;
   margin-bottom: 60px;
 }
 
@@ -168,9 +182,42 @@ left: 13px;
   z-index: 10;
 }
 
+#logotype {
+	position: absolute;
+	right: 15%;
+	top: -35px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+#logotype > h1 {
+	font: 400 2.8em 'Megrim', helvetica, arial, sans-serif;
+}
+
+#descriptors {
+	position: absolute;
+	right: 15%;
+	bottom: 35px;
+	left: 15%;
+	z-index: 10;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+#descriptors > h2{
+	font: 400 25px 'Raleway', helvetica, arial, sans-serif;
+	line-height: 10px;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 399px;
   background-color: #fff;
 }
 .carousel-inner > .item > img {
@@ -178,11 +225,35 @@ left: 13px;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 399px;
 }
 
 .item {
   background: #2d2d7c url('../assets/img/background.png') repeat fixed; 
+}
+
+.carousel-indicators {
+bottom: 0;
+}
+
+#vector-img {
+	position: relative;
+	display: block;
+	margin: 99px auto 0 auto;
+	height: 300px;
+}
+
+#vector-img span {
+    display: inline-block;
+    *display: inline;
+    background: url(assets/img/geometric-portrait-3.png) 0 0 no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    zoom: 1;
+}
+.svg #vector-img span {
+    background: none;
 }
 
 
@@ -217,10 +288,17 @@ left: 13px;
   letter-spacing: -1px;
 }
 
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (min-width: 440px) {
+	#experience{
+		display: inline;
+	}
+	
+	#exp{
+		display: none;
+	}
+}
 
 @media (min-width: 768px) {
 
