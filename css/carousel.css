@@ -20,6 +20,10 @@ body {
 
 * { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased; }
 
+abbr[title], acronym[title] {
+     border-bottom-width: 0;
+   }
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -99,11 +103,7 @@ body {
   color: #757575;
 }
 
-#exp{
-	border-bottom-width: 0;
-}
-
-#experience{
+.expand{
 	display: none;
 }
 
@@ -111,7 +111,7 @@ body {
   z-index:12;
   position: absolute;
   top: 88px;
-  background-color:rgba(0,0,0,0.75);
+  background-color:rgba(0,0,0,0.95);
   /*padding: 7px 7px 7px 1px;*/
   /*border: 1px solid rgba(26,53,71,.12);*/
   border-radius: 4px;
@@ -144,6 +144,7 @@ body {
   list-style: none;
   text-align: left;
   display: block;
+  font-size: 1.2em;
 }
 
 #popover a {
@@ -297,12 +298,12 @@ bottom: 0;
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 440px) {
-	#experience{
+@media (min-width: 480px) {
+	.expand{
 		display: inline;
 	}
 	
-	#exp{
+	a > abbr{
 		display: none;
 	}
 }
