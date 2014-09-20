@@ -294,7 +294,7 @@ bottom: 0;
 	}
 }
 
-@media (max-height:380px) {
+@media (max-height:479px) {
 	.carousel, .carousel .item, .item > img {
 		height: 239px;
 	}
