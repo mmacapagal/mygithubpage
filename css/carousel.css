@@ -1,7 +1,7 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-/*
+
 @viewport{
     zoom: 1.0;
     width: extend-to-zoom;
@@ -10,7 +10,7 @@
 @-ms-viewport{
     width: extend-to-zoom;
     zoom: 1.0;
-}*/
+}
 
 body {
   padding-bottom: 40px;
