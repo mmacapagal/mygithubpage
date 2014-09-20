@@ -53,6 +53,8 @@ body {
 }
 
 #nav-container {
+  overflow:none;
+  white-space:nowrap;
   background: #2d2d7c url('../assets/img/background.png') repeat fixed; 
 }
 
@@ -68,6 +70,7 @@ body {
   position: relative;
   display: inline-block;
   background-color:rgba(0,0,0,0.75);
+  border: 1px solid black;
   width: 20%;
 }
 
