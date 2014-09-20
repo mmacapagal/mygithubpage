@@ -251,20 +251,6 @@ bottom: 0;
 	height: 300px;
 }
 
-#vector-img span {
-    display: inline-block;
-    *display: inline;
-    background: url(assets/img/geometric-portrait-3.png) 0 0 no-repeat;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    zoom: 1;
-}
-.svg #vector-img span {
-    background: none;
-}
-
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -305,5 +291,30 @@ bottom: 0;
 	
 	a > abbr{
 		display: none;
+	}
+}
+
+@media (max-height:380px) {
+	.carousel, .carousel .item, .item > img {
+		height: 239px;
+	}
+	
+	#descriptors > h2 {
+		text-align: left;
+	}
+	
+	#logotype > h1 > br {
+		display: none;
+	}
+	
+	#title-break{
+		display: inline;
+	}
+	
+	#vector-img {
+		position: relative !important;
+		display: block;
+		margin: 10px auto 0 35%;
+		height: 300px;
 	}
 }
