@@ -237,7 +237,7 @@ bottom: 0;
 }
 
 #vector-img {
-	position: relative;
+	position: relative !important;
 	display: block;
 	margin: 99px auto 0 auto;
 	height: 300px;
