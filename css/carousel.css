@@ -63,6 +63,7 @@ body {
   font-size: 0;
   text-align: center;
   margin: 0;
+  width: 640px;
 }
 
 #nav > li {
