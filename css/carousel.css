@@ -59,12 +59,12 @@ body {
 }
 
 #nav {
-  position:relative;
+  position: relative;
   z-index: 300;
   font-size: 0;
   text-align: center;
-  margin: 0;
   width: 100%;
+  margin: 0;
 }
 
 #nav > li {
@@ -72,12 +72,19 @@ body {
   position: relative;
   display: inline-block;
   background-color:rgba(0,0,0,0.75);
-  margin: 0;
   width: 20%;
 }
 
 #nav > li:nth-of-type(2n) {
   background-color:rgba(0,0,0,0.6);
+}
+
+#nav > li:first-child {
+  padding-left: 2px;
+}
+
+#nav > li:last-child {
+  padding-right: 2px;
 }
 
 #nav a {
