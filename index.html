@@ -30,7 +30,7 @@
 	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
 	
 	<!--Raleway and Megrim fonts-->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
 	
 	<!-- Custom styles for this template -->
@@ -38,76 +38,55 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body><!--
-	--><div id="nav-container">
-		<ul id="nav">
-		  <li><a href=#><i class="fa fa-home fa-5x"></i><br/>HOME</a>
-			<li>
-			  <a href="##" class="more"><i class="fa fa-info-circle fa-5x"></i><br/><abbr title="Background">B/G</abbr><span class="expand">BACKGROUND</span> <i class="fa fa-caret-down"></i></a>
-				<ul id="popover">
-					<li><a href="#"><i class="fa fa-file-text fa-fw"></i> R&Eacute;SUM&Eacute;</a>
-					<li><a href="##"><i class="fa fa-book fa-fw"></i> HARRINGTON LABS</a></li>
-					<li><a href=#><i class="fa fa-university fa-fw"></i> <abbr title="Cornell University Asian American Studies Program">CU AASP</abbr><span class="expand">CORNELL ASIAN AMERICAN STUDIES PROGRAM</span></a>
-					<li><a href=#><i class="fa fa-globe fa-fw"></i> CORNELL FILIPINO <abbr title="Association">ASSOC.</abbr><span class="expand">ASSOCIATION</span></a>
-					<li><a href=#><i class="fa fa-briefcase fa-fw"></i> <abbr title="New York City Human Resources Administration: Bureau of Fraud Investigation">NYC HRA: BFI</abbr><span class="expand">NYC HRA: BUREAU OF FRAUD INVESTIGATION</span></a>
-				</ul>
-		  <li><a href=#><i class="fa fa-pencil fa-5x"></i><br/>BLOG</a>
-		  <li><a href=#><i class="fa fa-envelope fa-5x"></i><br/>CONTACT</a>
-		</ul>
-	</div><!--
+  <body>
+
+	<div id="large-nav-container">
+		<div id="left-nav-space">
+		</div>
+		<div id="home-logo">
+			<img src="assets/img/home-logo.svg" onerror="this.onerror=null; this.src='assets/img/home-logo-3.png'" />
+		</div>
+		<div id="nav-container">
+			<ul id="nav">
+			  <li><a href=#><i class="fa fa-home"></i><br/>HOME</a>
+				<li>
+				  <a href="##" class="more"><i class="fa fa-info-circle"></i><br/><abbr title="Background">B/G</abbr><span class="expand">BACKGROUND</span><i class="fa fa-caret-down"></i></a>
+					<ul id="popover">
+						<li><a href="#"><i class="fa fa-file-text fa-fw"></i> R&Eacute;SUM&Eacute;</a>
+						<li><a href="##"><i class="fa fa-book fa-fw"></i> HARRINGTON LABS</a></li>
+						<li><a href=#><i class="fa fa-university fa-fw"></i> <abbr title="Cornell University Asian American Studies Program">CU AASP</abbr><span class="expand">CORNELL ASIAN AMERICAN STUDIES PROGRAM</span></a>
+						<li><a href=#><i class="fa fa-globe fa-fw"></i> CORNELL FILIPINO <abbr title="Association">ASSOC.</abbr><span class="expand">ASSOCIATION</span></a>
+						<li><a href=#><i class="fa fa-briefcase fa-fw"></i> <abbr title="New York City Human Resources Administration: Bureau of Fraud Investigation">NYC HRA: BFI</abbr><span class="expand">NYC HRA: BUREAU OF FRAUD INVESTIGATION</span></a>
+					</ul>
+			  <li><a href=#><i class="fa fa-pencil"></i><br/>BLOG</a>
+			  <li><a href=#><i class="fa fa-envelope"></i><br/>CONTACT</a>
+			</ul>
+		</div>
+	</div>
     
-	Carousel
-    ==================================================
-    --><div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <!--<img src="assets/img/background.png" id="first-slide-background" alt="First slide">-->
-          <div class="container">
-				<div id="logotype">
-					<h1>MARK<span id="title-break"> </span><br/>MACAPAGAL</h1>
-				</div>
-				<img src="assets/img/geometric-portrait-3.svg" onerror="this.onerror=null; this.src='assets/img/geometric-portrait-3.png'" id="vector-img" />
-			<div id="descriptors">
-			  <h2>Biology</h2>
-			  <h2>Web Design</h2>
-			  <h2>Filipino Culture</h2>
-              <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
-            </div>-->
-          </div>
-        </div>
-        <div class="item">
-          <!--<img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">-->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <!--<img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">-->
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+	<div class="jumbo">
+		
+        <div id="logotype">
+			<h1>MARK<span id="title-space"> </span><br />MACAPAGAL</h1>
+		</div>
+		
+	
+		<img src="assets/img/geometric-portrait-3.svg" onerror="this.onerror=null; this.src='assets/img/geometric-portrait-3.png'" id="vector-img" />
+		
+    </div>
+	
+	<div id="descriptors">
+		<h2>Neurobiologist</h2>
+		<h2>Web Designer</h2>
+		<h2>Filipino Activist</h2>
+		<a href="#" id="resume-button" role="button"><i class="fa fa-file-text fa-fw"></i>R&Eacute;SUM&Eacute;</a>
+	</div>
+	
+	<div class="clear"></div>
+	
 
-
+	
+	
 
     <!-- Marketing messaging and featurettes
     ================================================== -->

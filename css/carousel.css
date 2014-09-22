@@ -1,3 +1,5 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -16,47 +18,58 @@ body {
   padding-bottom: 40px;
   color: #000;
   /*background: #2d2d7c url('../assets/img/background.png') repeat fixed; */
+  font: 500 1em 'Raleway', helvetica, arial, sans-serif;
+  line-height: 2;
+  background: #fff /*#2d2d7c url('../assets/img/background.png') repeat fixed*/; 
 }
 
-* { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased; }
+* { -webkit-font-smoothing:antialiased; -moz-font-smoothing:antialiased; -ms-font-smoothing:antialiased; -o-font-smoothing:antialiased; font-smoothing:antialiased;
+	margin: 0;
+	padding: 0;
+}
 
 abbr[title], acronym[title] {
      border-bottom-width: 0;
    }
 
+a:visited {
+  color: #757575;
+}
+
+a:hover {
+  color: #6767ef;
+  background-color:rgba(0,0,0,0.8);
+  text-decoration: none !important;
+}
+
+a:focus {
+  color: #6767ef;
+  background-color:rgba(0,0,0,0.8);
+  text-decoration: none !important;
+}
+
+a:active {
+  color: #8d8def;
+}
+
+.clear {
+	clear: both;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. 
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+#left-nav-space 	{
+	display: none;
 }
 
- Flip around the padding for proper display in narrow viewports 
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-*/
-
-* {
-  margin: 0;
-  padding: 0;
+#home-logo {
+	display: none;
 }
 
 #nav-container {
+  width:100%;
   overflow:none;
   white-space:nowrap;
   background: #2d2d7c url('../assets/img/background.png') repeat fixed; 
@@ -65,7 +78,6 @@ abbr[title], acronym[title] {
 #nav {
   position: relative;
   z-index: 300;
-  font-size: 0;
   text-align: center;
   width: 100%;
   margin: 0;
@@ -90,8 +102,13 @@ abbr[title], acronym[title] {
   padding: 10px 0 10px 0;
 }
 
+#nav > li > a > i:not(.fa-caret-down) {
+	font-size: 5em;
+	}
+
+
 #nav a:visited {
-  color: #bcbcbc;
+  color: #fff;
 }
 
 #nav a:hover {
@@ -114,7 +131,10 @@ abbr[title], acronym[title] {
   background-color:rgba(0,0,0,0.95);
   /*padding: 7px 7px 7px 1px;*/
   /*border: 1px solid rgba(26,53,71,.12);*/
-  border-radius: 4px;
+  	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; /* future proofing */
+	-khtml-border-radius: 4px; /* for old Konqueror browsers */
   box-shadow: 0 1px 2px rgba(26,53,71,.1);
   opacity: 0;
   pointer-events: none;
@@ -130,7 +150,7 @@ abbr[title], acronym[title] {
   transform: none;
 }
 
-#popover::before {
+#popover:before {
   content: "";
   position: absolute;
   top: -7px;
@@ -163,29 +183,105 @@ abbr[title], acronym[title] {
   border-radius: 0 0 4px 4px;
 }
 
-
 .fa-4x{
 font-size:4em;
 line-height:1.25em;
 }
 
-#resume-button{
-position: relative;
-top: -3px;
-left: 13px;
+/*JUMBOTRON*/
+
+.jumbo {
+	position: relative;
+	height: calc(480px - 81px);
+	margin-bottom: 0;
+	background: #2d2d7c url('../assets/img/background.png') repeat fixed;
+	overflow: hidden;
+	padding: 0;
 }
 
+#logotype {
+	position: relative;
+	z-index: 10;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.9);
+}
+
+#logotype > h1 {
+	font: 400 3.3em 'Megrim', helvetica, arial, sans-serif;
+	margin: 0;
+	line-height: 1;
+}
+
+#title-space {
+	display: none;
+}
+
+#vector-img {
+	position: relative;
+	display: block;
+	width:280px;
+	margin: -12px auto 0 auto;
+	z-index: 1;
+	bottom: 0;
+}
+
+
+#descriptors {
+	z-index: 15;
+	white-space:nowrap;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	margin-top: -135px;
+}
+
+#descriptors > h2{
+	font: 400 1.3em 'Raleway', helvetica, arial, sans-serif;
+	color: #fff;
+	text-shadow: 1px 2px 1px rgba(0,0,0,0.9);
+}
+
+#resume-button {
+	font: 900 1.3em 'Raleway', helvetica, arial, sans-serif;
+	margin: 2px auto 5px auto;
+	display: inline-block;	
+	padding-right: 5px;
+	background: rgba(246,228,62,1);
+	font-size: 1.5em;
+	line-height: 50px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+a#resume-button {
+	color: rgba(22,22,22,1);
+}
+
+a#resume-button:hover {
+	-webkit-transform: scale(1.05);
+	background: rgba(246,228,62,0.9);
+}
+
+a#resume-button:active {
+	-webkit-transform: scale(1);
+}
+
+.marketing > div > div {
+	padding: 30px 15px 0 15px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
+/*
 .carousel {
   height: 399px;
   margin-bottom: 60px;
 }
 
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
 }
@@ -223,7 +319,6 @@ left: 13px;
 	line-height: 10px;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel .item {
   height: 399px;
   background-color: #fff;
@@ -243,18 +338,19 @@ left: 13px;
 .carousel-indicators {
 bottom: 0;
 }
+*/
 
-#vector-img {
-	position: relative !important;
-	display: block;
-	margin: 99px auto 0 auto;
-	height: 300px;
-}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing {
+  background: #fff;
+  position: relative;
+  margin-top: 3px;
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -282,6 +378,7 @@ bottom: 0;
   letter-spacing: -1px;
 }
 
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 480px) {
@@ -294,9 +391,20 @@ bottom: 0;
 	}
 }
 
-@media (max-height:479px) {
-	.carousel, .carousel .item, .item > img {
+@media (max-height: 320px) and (max-width: 480px) {
+	.jumbo{
 		height: 239px;
+	}
+	
+	#descriptors {
+		margin-top: -160px;
+		margin-left: 6%;
+		padding: 0;
+	}
+	
+	#descriptors > a{
+		margin-top: 25px;
+		float: left;
 	}
 	
 	#descriptors > h2 {
@@ -307,14 +415,262 @@ bottom: 0;
 		display: none;
 	}
 	
-	#title-break{
+	#title-space{
 		display: inline;
 	}
 	
 	#vector-img {
-		position: relative !important;
+		position: absolute;
 		display: block;
-		margin: 10px auto 0 35%;
-		height: 300px;
+		height: 230px;
+		right: -3%;
+		z-index: 1;
+		bottom: 0;
+	}
+	
+	.marketing {
+		margin-top: 5px;
+	}
+	
+}
+
+@media (min-width:1024px) {
+	#home-logo {
+		display: inline-block;
+		padding: 0;
+		margin-top: 20px;
+		margin-left: 20px;
+		float: left;
+	}
+	
+	#nav-container {
+		display: block;
+		white-space: normal;
+		width: auto;
+		height: 61px;
+		background: url('../assets/img/navbar-bg.svg') repeat-x bottom;
+		margin-left: 467px;
+		/*border-bottom: 2px solid rgba(255, 255, 255, 1);
+		border-left: 5px solid rgba(0, 0, 0, 0)*/
+	}
+	
+	#nav {
+		text-align: right;
+		padding-top: 6px;
+	}
+	
+	#nav > li {
+		width: auto;
+		margin-right: 20px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px; /* future proofing */
+		-khtml-border-radius: 4px; /* for old Konqueror browsers */
+		background: none;
+	}
+	
+	#nav > li:nth-of-type(2n) {
+		background: none;
+	}
+	
+	#nav > li:first-child {
+		display: none;
+	}
+	
+	#nav > li:last-child {
+		margin-right: 10px;
+	}
+	
+	#nav > li > a {
+		padding: 15px;
+	}
+	
+	/*#nav > li:nth-of-type(2) > a{
+		padding-right: 0;
+	}*/
+	
+	#nav > li > a > i:not(.fa-caret-down) {
+		font-size: 1em;
+	}
+	
+	#nav > li > a > .fa-caret-down {
+		font-size: 1em;
+		margin-left: 5px;
+	}
+	
+	#nav * br {
+		display: none;
+	}
+	
+	#nav * a {
+		font-size: 15px;
+	}
+	
+	#nav a:visited {
+	  color: #fff;
+	}
+
+	#nav a:hover {
+	  color: #6767ef;
+	  background-color:rgba(0,0,0,0.8);
+	  	-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px; /* future proofing */
+		-khtml-border-radius: 4px; /* for old Konqueror browsers */
+	}
+
+	#nav a:active {
+	  color: #c5c5ff;
+	  	-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px; /* future proofing */
+		-khtml-border-radius: 4px; /* for old Konqueror browsers */
+	}
+	
+	
+	#nav * i {
+		margin: 0 5px 0 0;
+	}
+	
+	#popover {
+		top: 55px;
+		width: 410px;
+	}
+	
+	
+	#logotype {
+		display: none;
+	}
+	
+	.jumbo {
+		width: 100%;
+		z-index: -1;
+		background: url('../assets/img/geometric-portrait-3.png') no-repeat bottom right / auto 580px,
+					#2d2d7c url('../assets/img/background.png') repeat fixed;
+		/*background-size: auto 580px;*/
+		position: absolute;
+		top: 0;
+		height: 590px;
+	}
+	
+	.jumbo > #vector-img {
+		display: none;
+	}
+	
+	#descriptors {
+		font-size: 0.9em;
+	}
+	
+	.marketing {
+		margin-top: 157px;
+	}
+	
+	#descriptors {
+		white-space: nowrap;
+		position: absolute;
+		text-align: left;
+		margin-left: 40px;
+		top: 250px;
+	}
+
+	#descriptors > h2{
+		font: 900 5em 'Raleway', helvetica, arial, sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 1px 2px 1px rgba(0,0,0,0.9);
+	}
+	
+	#resume-button {
+		font: 400 2.3em 'Raleway', helvetica, arial, sans-serif;
+		margin-left: 370px;
+		margin-top: 29px;
+		padding: 15px 15px 15px 10px;
+	}
+	
+}
+
+@media (min-width: 1200px){
+	#large-nav-container {
+		
+	}
+	
+	#left-nav-space {
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		width: 6%;
+		margin-right: 6px;
+		height: 61px;
+		background: url('../assets/img/navbar-bg.svg') repeat-x bottom;
+	}
+	
+	
+	#home-logo {
+		display: inline-block;
+		padding: 0;
+		margin-top: 20px;
+		margin-left: 0;
+		float: left;
+	}
+	
+	#nav-container {
+		width: auto;
+		height: 61px;
+		background: url('../assets/img/navbar-bg.svg') repeat-x bottom;
+		margin-left: 534px;
+		/*border-bottom: 2px solid rgba(255, 255, 255, 1);
+		border-left: 5px solid rgba(0, 0, 0, 0)*/
+	}
+	
+	.jumbo {
+		background: url('../assets/img/geometric-portrait-3.png') no-repeat 90% 20px / auto 700px,
+					#2d2d7c url('../assets/img/background.png') repeat fixed;
+		/*background-size: auto 580px;*/
+		position: absolute;
+		top: 0;
+		height: 590px;
+	}
+	
+	#descriptors {
+		margin-left: 10%;
+	}
+	
+	
+}
+
+/*
+@media (min-width: 1366px){
+	#vector-img {
+		position: absolute !important;
+		display: block;
+		right: 2%;
+		top: 5vh;
+		height: 115vh;
+		z-index: 1;
+	}
+
+	.jumbo {
+		height: calc(100vh - 81px);
+		width: 100%;
+		margin-bottom: 0;
+		background: #2d2d7c url('../assets/img/background.png') repeat fixed;
+		overflow: hidden;
+	}
+
+	#descriptors {
+		z-index: 20;
+		margin-top: 12vh;
+		white-space:nowrap;
+	}
+
+	#descriptors > h1{
+		font: 900 5em 'Raleway', helvetica, arial, sans-serif ;
+		color: #fff;
+		line-height: 0.8em;
+	}
+
+	#resume-button {
+		margin-top: 4em;
 	}
 }
+*/
