@@ -434,7 +434,7 @@ bottom: 0;
 	
 }
 
-@media (min-width:1024px) {
+@media (min-width:940px) {
 	#home-logo {
 		display: inline-block;
 		padding: 0;
@@ -537,6 +537,15 @@ bottom: 0;
 		width: 410px;
 	}
 	
+	#popover:before {
+		content: "";
+		position: absolute;
+		top: -7px;
+		left: 142px;
+		width: 13px;
+		height: 7px;
+		background: url('../assets/img/popover-arrow-black-white.svg');
+	}
 	
 	#logotype {
 		display: none;
