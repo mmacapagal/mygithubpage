@@ -554,7 +554,7 @@ bottom: 0;
 	.jumbo {
 		width: 100%;
 		z-index: -1;
-		background: url('../assets/img/geometric-portrait-3-deepred-deepred.svg') no-repeat bottom right / auto 580px,
+		background: url('../assets/img/geometric-portrait-3-deepred.svg') no-repeat bottom right / auto 580px,
 					#2d2d7c url('../assets/img/background.png') repeat fixed;
 		/*background-size: auto 580px;*/
 		position: absolute;
