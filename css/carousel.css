@@ -227,6 +227,7 @@ a:active {
 #nav-container * a:hover {
   color: #6767ef;
   background-color:rgba(0,0,0,0.8);
+  transition: .4s cubic-bezier(.3, 0, 0, 1.3);
 }
 
 #nav-container * a:active {
@@ -312,15 +313,19 @@ a:active {
 	border-radius: 10px; /* future proofing */
 	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 	color: rgba(22,22,22,1);
+	box-shadow: 3px 3px 1px rgba(0,0,0,1);
 }
 
 a#resume-button:hover {
-	-webkit-transform: scale(1.05);
-	background: rgba(246,228,62,0.9);
+	background: rgba(255,255,72,1);
+	-webkit-transform: scale(1.03);
+	transition: .4s cubic-bezier(.3, 0, 0, 1.3);
 }
 
 a#resume-button:active {
-	-webkit-transform: scale(1);
+	-webkit-transform: scale(0.98);
+	transition: .2s cubic-bezier(.3, 0, 0, 1.3);
+	box-shadow: none;
 }
 
 
@@ -556,7 +561,6 @@ a#resume-button:active {
 		z-index: -1;
 		background: url('../assets/img/geometric-portrait-3-deepred.svg') no-repeat bottom right / auto 580px,
 					#2d2d7c url('../assets/img/background.png') repeat fixed;
-		/*background-size: auto 580px;*/
 		position: absolute;
 		top: 0;
 		height: 590px;
@@ -669,9 +673,8 @@ a#resume-button:active {
 	}
 	
 	.jumbo {
-		background: url('../assets/img/geometric-portrait-3-deepred.svg') no-repeat 90% 20px / auto 700px,
+		background: url('../assets/img/geometric-portrait-3-deepred.svg') no-repeat 90% 20px / auto 620px,
 					#2d2d7c url('../assets/img/background.png') repeat fixed;
-		/*background-size: auto 580px;*/
 		position: absolute;
 		top: 0;
 		height: 590px;
