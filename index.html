@@ -26,6 +26,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+	<!--Smooth Scrolling-->
+	<script src="assets/js/smooth-scrolling.js"></script>
+	
 	<!--Font Awesome-->
 	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
 	
@@ -40,27 +43,27 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-
+<div class="wrapper">
 	<div id="large-nav-container">
 		<div id="left-nav-space">
 		</div>
 		<div id="home-logo">
-			<img src="assets/img/home-logo.svg" onerror="this.onerror=null; this.src='assets/img/home-logo-3.png'" />
+			<img src="assets/img/home-logo.svg" onerror="this.onerror=null; this.src='assets/img/home-logo.png'" />
 		</div>
 		<div id="nav-container">
 			<ul id="nav">
-			  <li><a href=#><i class="fa fa-home fa-fw"></i><br/>HOME</a>
+			  <li><a href="#"><i class="fa fa-home fa-fw"></i><br/>HOME</a>
 				<li>
-				  <a href="##" class="more"><i class="fa fa-info-circle fa-fw"></i><br/><abbr title="Background">B/G</abbr><span class="expand">BACKGROUND</span><i class="fa fa-caret-down"></i></a>
+				  <a href="#" class="more"><i class="fa fa-info-circle fa-fw"></i><br/><abbr title="Background">B/G</abbr><span class="expand">BACKGROUND</span><i class="fa fa-caret-down"></i></a>
 					<ul id="popover">
 						<li><a href="#"><i class="fa fa-file-text fa-fw"></i> R&Eacute;SUM&Eacute;</a>
-						<li><a href="##"><i class="fa fa-book fa-fw"></i> HARRINGTON LABS</a></li>
-						<li><a href=#><i class="fa fa-university fa-fw"></i> <abbr title="Cornell University Asian American Studies Program">CU AASP</abbr><span class="expand">CU ASIAN AMERICAN STUDIES PROGRAM</span></a>
-						<li><a href=#><i class="fa fa-globe fa-fw"></i> CORNELL FILIPINO <abbr title="Association">ASSOC.</abbr><span class="expand">ASSOCIATION</span></a>
-						<li><a href=#><i class="fa fa-briefcase fa-fw"></i> <abbr title="New York City Human Resources Administration: Bureau of Fraud Investigation">NYC HRA: BFI</abbr><span class="expand">NYC HRA: BUREAU OF FRAUD INVESTIGATION</span></a>
+						<li><a href="#"><i class="fa fa-book fa-fw"></i> HARRINGTON LABS</a></li>
+						<li><a href="#"><i class="fa fa-university fa-fw"></i> <abbr title="Cornell University Asian American Studies Program">CU AASP</abbr><span class="expand">CU ASIAN AMERICAN STUDIES PROGRAM</span></a>
+						<li><a href="#"><i class="fa fa-globe fa-fw"></i> CORNELL FILIPINO <abbr title="Association">ASSOC.</abbr><span class="expand">ASSOCIATION</span></a>
+						<li><a href="#"><i class="fa fa-briefcase fa-fw"></i> <abbr title="New York City Human Resources Administration: Bureau of Fraud Investigation">NYC HRA: BFI</abbr><span class="expand">NYC HRA: BUREAU OF FRAUD INVESTIGATION</span></a>
 					</ul>
-			  <li><a href=#><i class="fa fa-pencil fa-fw"></i><br/>BLOG</a>
-			  <li><a href=#><i class="fa fa-envelope fa-fw"></i><br/>CONTACT</a>
+			  <li><a href="#"><i class="fa fa-pencil fa-fw"></i><br/>BLOG</a>
+			  <li><a href="#"><i class="fa fa-envelope fa-fw"></i><br/>CONTACT</a>
 			</ul>
 		</div>
 	</div>
@@ -72,7 +75,7 @@
 		</div>
 		
 	
-		<img src="assets/img/geometric-portrait-3.svg" onerror="this.onerror=null; this.src='assets/img/geometric-portrait-3.png'" id="vector-img" />
+		<img src="assets/img/geometric-portrait-4.svg" onerror="this.onerror=null; this.src='assets/img/geometric-portrait-4.png'" id="vector-img" />
 		
     </div>
 	
@@ -92,7 +95,7 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-	<div class="skew">
+	<div class="skew" id="home-body">
 		<div class="unskew container">
 			<h2>About</h2>
 		</div>
@@ -121,56 +124,29 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
 
     </div><!-- /.container -->
+</div>	
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer skew-opposite">  
+			<div class="container unskew-opposite">
+				<div class="row">
+					<div class="col-lg-12">
+						<p id="back-to-top"><a href="#">Back to top</a></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="pull-left">&copy; 2014 Mark Macapagal</p>
+						<p class="pull-right">Mark Macapagal</p>
+					</div>
+				</div>
+			</div>
+      	</div>
+		<div class="bottom">
+		</div>
+	</footer>
 
 
     <!-- Bootstrap core JavaScript
