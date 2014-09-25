@@ -26,9 +26,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-	<!--Smooth Scrolling-->
-	<script src="assets/js/smooth-scrolling.js"></script>
-	
 	<!--Font Awesome-->
 	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
 	
@@ -39,11 +36,16 @@
 	
 	<!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+
+	<!--JQuery and Smooth scrolling-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+	
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-<div class="wrapper">
+  <body id="top">
+<div class="wrapper" >
 	<div id="large-nav-container">
 		<div id="left-nav-space">
 		</div>
@@ -102,42 +104,55 @@
 	</div>
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+      
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        
+		<div class="col-sm-4">
+          <img src="assets/img/caaa-med.png" alt="Generic placeholder image" style="max-width: 350px; width: 100%;">
+        </div>
+		
+        <div class="col-sm-8">
+          <p>Hi, my name is Mark Macapagal. I am a recent Cornell University graduate who loves neurons, elegant websites, and <a href="#" class="chicken">Chicken Adobo.</a></p>
+		  
+		  <p>This site chronicles my diverse escapades, including:</p>
+			
+			<div class="accordion">
+			    <h2 class="open">the summer I fell in love with mosquitoes</h2>
+				<p>...during research with <i class="fa fa-book fa-fw"></i>Harrington Labs
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></p>
+				
+				<h2>my award-winning job cooking SPAM and eggs</h2>
+				<p>...among other responsibilities at the <i class="fa fa-university fa-fw"></i>Cornell Asian American Studies Program
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></p>
+				
+				<h2>the time I wore a coconut bra</h2>
+				<p>...leading the Maglalatik dance for the <i class="fa fa-globe fa-fw"></i>Cornell Filipino Association
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></li></p>
+				
+				<h2>the satisfaction of teaching your bosses</h2>
+				<p>...during my internship at <i class="fa fa-briefcase fa-fw"></i>NYC HRA: Bureau of Fraud Investigation
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></li></p>
+			</div>
+					
+		<p>Thank you for taking the time to learn about me. This hip-hop dancing, musical theatre loving, web-design enthusiast is ready to change the world. </p>
+        </div>
+      
+	  </div>
 
 
-    </div><!-- /.container -->
+    </div>
 </div>	
 	<!-- FOOTER -->
 	<footer>
 		<div class="footer skew-opposite">  
 			<div class="container unskew-opposite">
 				<div class="row">
-					<div class="col-lg-12">
-						<p id="back-to-top"><a href="#">Back to top</a></p>
+					<div class="col-sm-12">
+						<p id="back-to-top"><a href="#top"><img src="assets/img/up-arrow.svg" onerror="this.onerror=null; this.src='assets/img/up-arrow.png'" /></a></p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-sm-12">
 						<p class="pull-left">&copy; 2014 Mark Macapagal</p>
 						<p class="pull-right">Mark Macapagal</p>
 					</div>
@@ -158,6 +173,8 @@
 	<script src="scripts/uilang.js"></script>
 	<code>
 	  clicking on ".more" toggles class "visible" on "#popover"
+	    clicking on "h2" removes class "open" on "h2.open"
+		clicking on "h2" adds class "open" on "target"
 	</code>
   </body>
 </html>
