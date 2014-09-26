@@ -562,6 +562,7 @@ a.accordion-button:active {
 .footer-name {
 	font: 400 2.5em 'Megrim', helvetica, arial, sans-serif;
 	text-transform: uppercase;
+	white-space: no-wrap;
 }
 
 /* Grow */
@@ -951,36 +952,39 @@ margin: 0 auto -20px;
 
 
 @media (min-width:992px){
-		.footer-email > p{
-			float:right;
-		}
-		
-		.footer {
-			text-align: left;
-		}
-		
-		.connect{
-			padding-top: 3.3em;
-		}
-		
-		.footer-email{
-			padding-top: 3.3em;
-		}
-		
-		.footer-2 {
-		}
-		
-		.footer-nav > li {
-			width:25%;
-			display: inline-block;
-			vertical-align: top;
-		}
-		
-		.submenu{
-			margin-left: 1.5em;
-		}
-		
-		
+	.footer-email > p{
+		float:right;
+	}
+	
+	.footer {
+		text-align: left;
+	}
+	
+	.connect{
+		padding-top: 3.3em;
+	}
+	
+	.connect > a:nth-of-type(2){
+		margin-right: -50%;
+		margin-left: 10%;
+	}
+	
+	.footer-email{
+		padding-top: 3.3em;
+	}
+	
+	.footer-2 {
+	}
+	
+	.footer-nav > li {
+		width:25%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.submenu{
+		margin-left: 1.5em;
+	}
 }
 
 @media (min-width: 1200px){
@@ -1032,6 +1036,10 @@ margin: 0 auto -20px;
 		margin-left: 8%;
 	}
 	
+	.connect > a:nth-of-type(2){
+		margin-right: -53%;
+		margin-left: 23%;
+	}
 	
 }
 
