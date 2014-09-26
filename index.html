@@ -38,14 +38,14 @@
     <link href="css/carousel.css" rel="stylesheet">
 
 	<!--JQuery and Smooth scrolling-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="assets/js/bind-polyfill.js"></script>
+	<script type="text/javascript" src="assets/js/smooth-scroll-2.js"></script>
 	
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body id="top">
-<div class="wrapper" >
+  <body >
+<div class="wrapper" id="home">
 	<div id="large-nav-container">
 		<div id="left-nav-space">
 		</div>
@@ -112,11 +112,81 @@
         </div>
 		
         <div class="col-sm-8">
-          <p>Hi, my name is Mark Macapagal. I am a recent Cornell University graduate who loves neurons, elegant websites, and <a href="#" class="chicken">Chicken Adobo.</a></p>
+          <p>Hi, my name is Mark Macapagal. I am a Cornell University graduate who loves neurons, elegant design, and 
+		  <a id="chicken" href="#!" tabindex="0" title="So. Beautiful." data-content="<img src='assets/img/adobo.jpg' height='200px' width='300px' class='img-rounded' alt='Chicken Adobo'/>">Chicken Adobo</a>.</p>
 		  
-		  <p>This site chronicles my diverse escapades, including:</p>
+		  <p>Although I have a BA in Biology (concentration in Neurobiology and Behavior), and an Information Science minor, I've had many diverse adventures, including:</p>
 			
-			<div class="accordion">
+			
+		<div class="accordion">			
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					  The summer I fell in love with mosquitoes
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse">
+				  <div class="panel-body">
+					...when researching in Florida with 
+					<a class="accordion-button" href="#" role="button"><i class="fa fa-book fa-fw"></i>Harrington Labs &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					  My award-winning job cooking SPAM and eggs
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					...and other critical responsibilities at the 
+					<a class="accordion-button" href="#" role="button"><i class="fa fa-university fa-fw"></i>Cornell Asian American Studies Program &raquo;</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					  Dances in coconut bras
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+				  <div class="panel-body">
+					...as VP and President of the 
+					<a class="accordion-button" href="#" role="button"><i class="fa fa-globe fa-fw"></i>Cornell Filipino Association &raquo;</a>
+				  </div>
+				</div>				
+			  </div>
+			  
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+					  The time I lectured my bosses and got away with it
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse">
+				  <div class="panel-body">
+					...by leading Mental Health Awareness training at the
+					<a class="accordion-button" href="#" role="button"><i class="fa fa-briefcase fa-fw"></i>NYC HRA: Bureau of Fraud Investigation &raquo;</a>
+				  </div>
+				</div>				
+			  </div>			  
+			  
+			</div>
+		</div>			
+			
+			
+			<!--<div class="accordion">
 			    <h2 class="open">the summer I fell in love with mosquitoes</h2>
 				<p>...during research with <i class="fa fa-book fa-fw"></i>Harrington Labs
 				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></p>
@@ -127,14 +197,14 @@
 				
 				<h2>the time I wore a coconut bra</h2>
 				<p>...leading the Maglalatik dance for the <i class="fa fa-globe fa-fw"></i>Cornell Filipino Association
-				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></li></p>
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></p>
 				
 				<h2>the satisfaction of teaching your bosses</h2>
 				<p>...during my internship at <i class="fa fa-briefcase fa-fw"></i>NYC HRA: Bureau of Fraud Investigation
-				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></li></p>
-			</div>
+				<br /><a class="accordion-button" href="#" role="button">View details &raquo;</a></p>
+			-->
 					
-		<p>Thank you for taking the time to learn about me. This hip-hop dancing, musical theatre loving, web-design enthusiast is ready to change the world. </p>
+		<p>Thank you for taking the time to learn about me. This hip-hop dancing, musical theatre belting, web design enthusiast is ready to change the world. </p>
         </div>
       
 	  </div>
@@ -147,22 +217,56 @@
 		<div class="footer skew-opposite">  
 			<div class="container unskew-opposite">
 				<div class="row">
-					<div class="col-sm-12">
-						<p id="back-to-top"><a href="#top"><img src="assets/img/up-arrow.svg" onerror="this.onerror=null; this.src='assets/img/up-arrow.png'" /></a></p>
+					<div class="back-to-top col-sm-12">
+						<p><a data-scroll href="#home" class="hover" ><img src="assets/img/up-arrow.svg" onerror="this.onerror=null; this.src='assets/img/up-arrow.png'" width="61px" height="81px" /></a></p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
-						<p class="pull-left">&copy; 2014 Mark Macapagal</p>
-						<p class="pull-right">Mark Macapagal</p>
+					<div class="col-md-4">
+						<h1 class="footer-name">Mark Macapagal</h1>
+						<p>is a Cornell University graduate with a BA in Biology. He enjoys programming for the web and promoting Filipino youth-activism.</p>
+					</div>
+					<div class="col-md-4 connect">
+						<a href="#!"><p><i class="fa fa-linkedin-square fa-3x fa-fw"></i></p><p>LinkedIn</p></a>
+						<a href="#!"><p><i class="fa fa-facebook-square fa-3x fa-fw"></i></p><p>Facebook</p></a>
+					</div>
+					<div class="col-md-4 footer-email">
+						<p><a href="mailto:&#109;&#97;&#114;&#107;&#64;&#109;&#97;&#99;&#97;&#112;&#97;&#103;&#97;&#108;&#46;&#110;&#101;&#116;">&#109;&#97;&#114;&#107;&#64;<span style="display:none">kglwd</span>&#109;&#97;&#99;&#97;&#112;&#97;&#103;&#97;&#108;&#46;&#110;&#101;&#116;</a></p>
 					</div>
 				</div>
 			</div>
       	</div>
-		<div class="bottom">
-		</div>
-	</footer>
+		
 
+		
+		<!--<div class="bottom-page">
+		</div>-->
+
+
+		<div class="footer-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-lg-12">
+						<ul class="footer-nav">
+							<li>Home</li><!--
+							--><li>Background
+								<ul class="submenu">
+									<li>R&eacute;sum&eacute;</li>
+									<li>Harrington Labs</li>
+									<li>CAASP</li>
+									<li>Cornell Filipino Assocation</li>
+									<li>NYC HRA: BFI</li>
+								</ul>
+							</li><!--
+							--><li>Blog</li><!--
+							--><li>Contact</li>
+						</ul>
+						<p>&copy; 2014 MarkMacapagal.com</p>
+					</div>
+
+			</div>
+		</div>
+	</footer>	
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -176,5 +280,20 @@
 	    clicking on "h2" removes class "open" on "h2.open"
 		clicking on "h2" adds class "open" on "target"
 	</code>
+	
+	 <script>
+		$(document).ready(function() {
+            $('#chicken').popover({
+				html: true,
+                toggle: "popover",
+				placement: "bottom",
+				trigger: "click hover focus manual",
+				});
+        });
+	</script>
+	
+	<script>
+		smoothScroll.init();
+	</script>
   </body>
 </html>
