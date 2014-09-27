@@ -560,9 +560,21 @@ a.accordion-button:active {
 }
 
 .footer-name {
+	margin-bottom: 2em;
+}
+
+.footer-name h1{
 	font: 400 2.5em 'Megrim', helvetica, arial, sans-serif;
 	text-transform: uppercase;
 	white-space: no-wrap;
+}
+
+.connect {
+	margin-bottom: 2em;
+}
+
+.footer-email {
+	margin-bottom: 1.5em;
 }
 
 /* Grow */
@@ -916,6 +928,7 @@ margin: 0 auto -20px;
 	  -ms-transform: skewY(-3deg);
 	  -o-transform: skewY(-3deg);
 	  transform: skewY(-3deg);
+	  height: 450px;
 	}
 	
 	.unskew-opposite{
@@ -936,7 +949,7 @@ margin: 0 auto -20px;
 	}
 	
 	.footer-2{
-		margin-top: -80px;
+		margin-top: -50px;
 	}
 	
 	.bottom-page{
@@ -960,6 +973,10 @@ margin: 0 auto -20px;
 		text-align: left;
 	}
 	
+	.back-to-top {
+		margin-bottom: 1em;
+	}
+	
 	.connect{
 		padding-top: 3.3em;
 	}
@@ -974,6 +991,7 @@ margin: 0 auto -20px;
 	}
 	
 	.footer-2 {
+		margin-top: -150px;
 	}
 	
 	.footer-nav > li {
