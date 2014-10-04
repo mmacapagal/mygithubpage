@@ -622,6 +622,8 @@ section {
 		overflow: hidden;
 		padding-top: 150px;
 		margin: 0 auto;
+		width: 100%;
+		max-width: 1440px;
 	}
 	
 	.se-slope{
@@ -638,7 +640,7 @@ section {
 		-o-transform: rotate(3deg);
 		-ms-transform: rotate(3deg);
 		transform: rotate(3deg);
-		margin-top: -180px;
+		margin-top: -160px;
 	}
 	.se-slope:nth-child(even){
 		-webkit-transform: rotate(-3deg);
