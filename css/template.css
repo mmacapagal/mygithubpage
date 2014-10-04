@@ -840,44 +840,44 @@ section {
 		transform-origin: left center;
 	}
 	.se-slope:nth-child(odd){
-		-webkit-transform: rotate(1deg);
-		-moz-transform: rotate(1deg);
-		-o-transform: rotate(1deg);
-		-ms-transform: rotate(1deg);
-		transform: rotate(1deg);
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
 		margin-top: -160px;
 	}
 	.se-slope:nth-child(even){
-		-webkit-transform: rotate(-1deg);
-		-moz-transform: rotate(-1deg);
-		-o-transform: rotate(-1deg);
-		-ms-transform: rotate(-1deg);
-		transform: rotate(-1deg);
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotate(-2deg);
 	}
 	.se-slope:nth-child(1){
-		-webkit-transform: rotate(1deg);
-		-moz-transform: rotate(1deg);
-		-o-transform: rotate(1deg);
-		-ms-transform: rotate(1deg);
-		transform: rotate(1deg);
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
 		margin-top: -190px;
 	}
 
 	.se-slope:nth-child(odd) .se-content{
-		-webkit-transform: rotate(-1deg);
-		-moz-transform: rotate(-1deg);
-		-o-transform: rotate(-1deg);
-		-ms-transform: rotate(-1deg);
-		transform: rotate(-1deg);
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotate(-2deg);
 		padding: 130px 0 150px 0;
 	}
 	
 	.se-slope:nth-child(even) .se-content{
-		-webkit-transform: rotate(1deg);
-		-moz-transform: rotate(1deg);
-		-o-transform: rotate(1deg);
-		-ms-transform: rotate(1deg);
-		transform: rotate(1deg);
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
 		color: #000;
 		padding: 130px 0 150px 0;
 	}
