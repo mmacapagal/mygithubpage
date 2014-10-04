@@ -22,7 +22,7 @@ body {
   padding-bottom: 40px;
   color: #000;
   font: 500 1em 'Raleway', helvetica, arial, sans-serif;
-  line-height: 2;
+  line-height: 1.6;
   background: rgba(236, 240, 241,1.0); 
 }
 
@@ -40,15 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font: 500 1.9em 'Megrim', helvetica, arial, sans-serif;
+	font: 500 1.5em 'Megrim', helvetica, arial, sans-serif;
 }
 
 h2 {
-	font: 900 2em 'Raleway', helvetica, arial, sans-serif;
+	font: 900 1.5em 'Raleway', helvetica, arial, sans-serif;
 }
 
 h3 {
-	font: 900 1.2em 'Raleway', helvetica, arial, sans-serif;
+	font: 900 1.4em 'Raleway', helvetica, arial, sans-serif;
+	line-height: 1.4;
 }
    
 a {
@@ -289,7 +290,8 @@ a:active {
 	color: #fff;
 	text-align: center;
 	text-shadow: 1px 2px 1px rgba(0,0,0,0.9);
-	padding: 10px;
+	padding: 3px;
+	transition: .5s cubic-bezier(.3, 0, 0, 1.3);
 }
 
 .logotype * a {
@@ -317,6 +319,15 @@ a:active {
 
 .se-content > p{
 	margin-top: 1em;
+}
+
+.page-title{
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
 figure {
@@ -1001,7 +1012,7 @@ margin: 0 auto -20px;
 		-o-transform: rotate(3deg);
 		-ms-transform: rotate(3deg);
 		transform: rotate(3deg);
-		margin-top: -190px;
+		margin-top: -160px;
 	}
 	.se-slope:nth-child(even){
 		-webkit-transform: rotate(-3deg);
@@ -1010,8 +1021,21 @@ margin: 0 auto -20px;
 		-ms-transform: rotate(-3deg);
 		transform: rotate(-3deg);
 	}
+	.se-slope:nth-child(1){
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+		-o-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		transform: rotate(3deg);
+		margin-top: -190px;
+	}
+	
 	.se-content{
+		position: relative;
+		z-index: 1;
+		width: 75%;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 
 
@@ -1026,7 +1050,7 @@ margin: 0 auto -20px;
 		-o-transform: rotate(-3deg);
 		-ms-transform: rotate(-3deg);
 		transform: rotate(-3deg);
-		padding: 130px 100px 250px 100px;
+		padding: 130px 0 150px 0;
 	}
 	
 	.se-slope:nth-child(odd) .se-content figure{
@@ -1041,7 +1065,15 @@ margin: 0 auto -20px;
 		-ms-transform: rotate(3deg);
 		transform: rotate(3deg);
 		color: #000;
-		padding: 150px 100px 250px 100px;
+		padding: 130px 0 150px 0;
+	}
+	
+	.page-title{
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin: -5% 0 10% 0;
+		padding-bottom: 2.5%;
+		border-bottom: 1px solid rgba(0,0,0,0.3);
 	}
 	
 	.se-slope:nth-child(even) .se-content figure{
@@ -1053,14 +1085,9 @@ margin: 0 auto -20px;
 		font: 1.4em;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	section {
+		font-size: 1.1em;
+	}
 	
 	
 	.skew{
