@@ -655,7 +655,8 @@ section {
 		-o-transform: rotate(3deg);
 		-ms-transform: rotate(3deg);
 		transform: rotate(3deg);
-		margin-top: -190px;
+		padding-top: 50px;
+		margin-top: -240px;
 	}
 	
 	.se-content{
