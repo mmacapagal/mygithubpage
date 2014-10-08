@@ -1,33 +1,12 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      pygments
+# Site settings
+title: Mark Macapagal - Biologist, Web Designer, Filipino Activist
+email: mark@macapagal.net
+description: > # this means to ignore newlines until "baseurl:"
+  Mark Macapagal is a Cornell University graduate with a BA in Biology. He enjoys programming for the web and promoting Filipino youth-activism.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://markmacapagal.com" # the base hostname & protocol for your site
+github_username: themarkofmac
 
-# Permalinks
-permalink:        pretty
-
-# Server
-source:           docs
-destination:      _gh_pages
-host:             0.0.0.0
-port:             9001
-baseurl:          /
-url:              http://getbootstrap.com
-encoding:         UTF-8
-
-# Custom vars
-current_version:  3.2.0
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
-
-download:
-  source:         https://github.com/twbs/bootstrap/archive/v3.2.0.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v3.2.0/bootstrap-3.2.0-dist.zip
-  sass:           https://github.com/twbs/bootstrap-sass/archive/v3.2.0.tar.gz
-
-blog:             http://blog.getbootstrap.com
-expo:             http://expo.getbootstrap.com
-
-cdn:
-  css:            //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
-  css_theme:      //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css
-  js:             //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
+# Build settings
+markdown: kramdown
+highlighter: rouge

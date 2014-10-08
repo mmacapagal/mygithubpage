@@ -722,7 +722,7 @@ section {
 	.se-content a {
 		background: rgba(0,0,0,0);
 		position: relative;
-		padding: 5px;
+		padding: 5px 0 5px 0;
 		text-shadow: none;
 		-webkit-transition: color 0.3s;
 		-moz-transition: color 0.3s;
