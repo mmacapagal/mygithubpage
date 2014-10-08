@@ -658,7 +658,7 @@ a.accordion-button:active {
 	}
 }
 
-@media (min-width: 784px) {
+@media (min-width: 768px) {
 	main {
 		text-align: left;
 	}
