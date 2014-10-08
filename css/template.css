@@ -402,7 +402,8 @@ section {
 /* FOOTER
 -------------------------------------------------- */
 
-.footer{
+
+.footer {
 	width: 100%;
 	padding-bottom: 1em;
 	background: rgba(44, 62, 80,1.0);
@@ -906,8 +907,6 @@ section {
 		height: 270px;
 		z-index: -1;
 	}
-	
-
 }
 
 
