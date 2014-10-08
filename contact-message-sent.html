@@ -83,15 +83,22 @@
 					<div class="se-content">
 						<div class="page-title">
 							<h2><i class="fa fa-envelope fa-fw"></i>Contact</a></h2>
-							<p class="message-success">Thank you, your message sucessfully sent. Expect a prompt response soon!</p>
-							<p>Send another message, or connect with my other online profiles below.</p>
+							<p class="message-success">Thank you, I've received your message. Expect a prompt response soon!</p>
+							<p>Send another message or connect with my other online profiles below.</p>
 						</div>
 						
 						
 							<div class="row">
 								<div class="col-md-8">
 					<!-- GOOGLE FORM-->
-						<form action="https://docs.google.com/forms/d/1nLx3bfaBI3urR1ymSm4DxDdvVM0OHqpArEBe_MFo8N4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+					
+							<script type="text/javascript">var submitted=false;</script>
+							<iframe name="hidden_iframe" id="hidden_iframe"
+							style="display:none;" onload="if(submitted)
+							{window.location='http://www.markmacapagal.com/contact-message-sent.html';}"></iframe>
+							<form action="https://docs.google.com/forms/d/1nLx3bfaBI3urR1ymSm4DxDdvVM0OHqpArEBe_MFo8N4/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+					
+						<!--<form action="https://docs.google.com/forms/d/1nLx3bfaBI3urR1ymSm4DxDdvVM0OHqpArEBe_MFo8N4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">-->
 							<ol role="list" class="ss-question-list" style="padding-left: 0">
 								<div class="ss-form-question errorbox-good text-input" role="listitem">
 									<div dir="ltr" class="ss-item ss-item-required ss-text">
